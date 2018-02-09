@@ -7,7 +7,8 @@ class Main
 
   def self.menu
     puts '1: Enter git command'
-    puts '2: Exit'
+    puts '2: view git config'
+    puts '3: Exit'
     choice = gets.to_i
     case choice
     when 1
@@ -15,6 +16,8 @@ class Main
       puts_git(gets.strip)
       menu
     when 2
+      Git.config
+    when 3
       exit
     else
       puts 'Invalid Entry'
