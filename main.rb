@@ -14,6 +14,7 @@ class Main
     when 1
       puts 'Enter git command'
       puts_git(gets.strip)
+      puts "test"
       menu
     when 2
       Git.config
