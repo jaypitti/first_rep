@@ -1,3 +1,5 @@
+require 'colorize'
+
 def puts_git(cmd)
   puts `git #{cmd} -h`
 end
@@ -17,4 +19,7 @@ def menu
     puts 'Invalid Entry'
     menu
   end
+end
+while true
+menu
 end
